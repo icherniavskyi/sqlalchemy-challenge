@@ -44,9 +44,29 @@
 ### Temperature Stats (Start Date)
 - **URL:** `/api/v1.0/<start>`
 - **Description:** Returns minimum, average, and maximum temperatures for date specified by user. If the date isn't available displays error message.
+***Example:***
+  - Input: /api/v1.0/2010-01-01
+  - Output:
+```json
+{
+"TAVG": 73.09916594176943,
+"TMAX": 87.0,
+"TMIN": 53.0
+}
+```
 
 ### Temperature Stats (Dates Range)
 - **URL:** `/api/v1.0/<start>/<end>`
 - **Description:** Returns minimum, average, and maximum temperatures for dates between the start and end date specified by user.
+***Example:***
+  - Input: /api/v1.0/2010-08-01/2011-05-01
+  - Output:
+```json
+{
+  "TAVG": 72.2168284789644,
+  "TMAX": 87.0,
+  "TMIN": 56.0
+}
+```
 
 ## Additional information and examples are provided in the app's home page
