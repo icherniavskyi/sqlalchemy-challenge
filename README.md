@@ -1,5 +1,34 @@
 # sqlalchemy-challenge
 
+# Hawaii Weather Analysis
+
+## This script performs climate analysis for Honolulu, Hawaii based on historical data. Analysis includes examining precipitation and temperature trends over 12 month period. Additionally, station analysis is conducted to identify the most-active stations and investigate temperature observations across various stations. 
+
+## Dependencies
+- Python 3.8+
+- SQLAlchemy
+- pandas
+- matplotlib
+- numpy
+- datetime
+
+### Setup and Usage
+
+1. Open script: hawaii_weather_analysis.py
+2. Ensure that the SQLite database hawaii.sqlite is located in the Resources directory
+3. Install the required dependencies by running:
+``` pip install sqlalchemy pandas matplotlib numpy ```
+4. Run the script
+
+## Results and Features
+
+- Uses the SQLAlchemy create_engine() function to connect to the hawaii.sqlite database
+- Pulls the last 12 months of precipitation data
+- Analyzes precipitation data by sorting values by date, plotting the results, and calculating summary statistics
+- Identifies the most-active weather stations 
+- Calculates the lowest, highest, and average temperatures observed at the most-active station
+- Visualizes the last 12 months of temperature observation
+
 # Climate Analysis API
 
 ## This API provides access to climate data stored in a SQLite database that could be found in resources folder. User can retrieve precipitation data, station information, temperature observations, and minimum, maximum, and average temperature for specific date or date ranges.
